@@ -21,7 +21,7 @@ export const CartContextProvider = (props) => {
         setCartItems((prev) => ({...prev, [id]:prev[id]+1}))
     }
 
-    const deleteFromCart = (id) => {
+    const removeFromCart = (id) => {
         setCartItems((prev) => ({...prev, [id]:prev[id]-1}))
     }
 
@@ -33,7 +33,7 @@ export const CartContextProvider = (props) => {
         cartItems,
         setCartItems,
         addToCart,
-        deleteFromCart,
+        removeFromCart,
         updateCartItemCount
     }
 
